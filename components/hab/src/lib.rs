@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+extern crate habitat_butterfly as butterfly;
 extern crate habitat_core as hcore;
 extern crate habitat_common as common;
 extern crate habitat_depot_client as depot_client;

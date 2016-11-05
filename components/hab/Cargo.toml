@@ -30,6 +30,9 @@ walkdir = "*"
 version = "*"
 features = [ "suggestions", "color", "unstable" ]
 
+[dependencies.habitat_butterfly]
+path = "../butterfly"
+
 [dependencies.habitat_core]
 path = "../core"
 
