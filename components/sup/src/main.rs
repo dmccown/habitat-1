@@ -43,7 +43,6 @@ use sup::error::{Error, Result, SupError};
 use sup::command::*;
 use sup::topology::Topology;
 use sup::util::parse_ip_port_with_defaults;
-use sup::util::path::busybox_paths;
 use sup::util::sys::ip;
 
 /// Our output key
