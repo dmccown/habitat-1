@@ -139,14 +139,6 @@ fn config_from_args(subcommand: &str, sub_args: &ArgMatches) -> Result<()> {
             .as_ref())
         .to_string());
 
-    let mut env_path = String::new();
-    for path in try!(busybox_paths()) {
-        if env_path.len() > 0 {
-            env_path.push(':');
-        }
-        env_path.push_str(path.to_string_lossy().as_ref());
-    }
-
     // NOTE: ip() returns an IpAddr, which we conveniently turn into a string
     // via to_string().
     let default_gossip_ip = try!(ip()).to_string();
